@@ -1,19 +1,22 @@
 import React from 'react';
 
 const PlantDetails = ({ plant }) => {
-  if (!plant) {
-    // If no matching plant is found, you can show an error message or redirect to a 404 page
-    return <div>Plant not found.</div>;
-  }
-
-  return (
-    <div>
-      <h2>{plant.name}</h2>
-      <p>Kingdom: {plant.kingdom}</p>
-      <p>Habitat: {plant.habitat}</p>
-      {/* Add more details as needed */}
-    </div>
-  );
-};
+    if (!plant) {
+      return <div>Plant not found.</div>;
+    }
+  
+    return (
+      <div className="container mt-4">
+        <div className="card">
+          <div className="card-body">
+            <h2 className="card-title">{plant.name}</h2>
+            <p className="card-text">Kingdom: {plant.kingdom}</p>
+            <p className="card-text">Habitat: {plant.habitat}</p>
+            {/* Add more plant details as needed */}
+          </div>
+        </div>
+      </div>
+    );
+  };
 
 export default PlantDetails;

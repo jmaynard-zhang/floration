@@ -1,0 +1,77 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #4285f4;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  /* Plant List styles */
+  .plant-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem;
+  }
+  
+  .plant-list li {
+    padding: 1rem; /* Add padding to create spacing around list items */
+    border: 1px solid #ccc;
+    margin: 0.5rem 0;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .plant-list li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .plant-list li a {
+    text-decoration: none;
+    color: #4285f4;
+  }
+  
+  /* Plant Details styles */
+  .plant-details {
+    padding: 1rem; /* Add padding to create spacing around plant details */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 1rem;
+  }
+  
+  .plant-details h2 {
+    color: #4285f4;
+    margin-bottom: 0.5rem;
+  }
+  
+  .plant-details p {
+    margin: 0.5rem 0;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #4285f4;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    .plant-list li {
+      font-size: 14px;
+    }
+    
+    .plant-details {
+      font-size: 14px;
+    }
+  }
+  

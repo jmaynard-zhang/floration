@@ -14,7 +14,6 @@ function App() {
   //     .then((response) => response.json())
   //     .then((data) => setPlants(data));
   // }, []);
-  console.log(plants);
 
   return (
     <>
