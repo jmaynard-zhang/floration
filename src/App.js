@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PlantList from './PlantList';
-// import PlantDetails from './PlantDetails';
+import PlantDetails from './PlantDetails';
 import plants from './plants';
 
 function App() {
@@ -23,8 +23,10 @@ function App() {
           {/* Route for the plant list page */}
           <Route path="/" element={<PlantList plants={plants} />} />
 
-          {/* Route for individual plant details pages */}
-          {/* <Route path="/plant/:name" element={<PlantDetails plants={plants} />} /> */}
+         {/* Route for individual plant details pages */}
+          {plants.map((plant) => (
+            <Route key={plant.id} path={`/plant/${plant.name}`} element={<PlantDetails plant={plant} />} />
+          ))}
         </Routes>
       </Router>
     </>
