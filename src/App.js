@@ -1,8 +1,8 @@
-// Import necessary libraries and components
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-// import PlantList from './PlantList';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import PlantList from './PlantList';
 // import PlantDetails from './PlantDetails';
+import plants from './plants';
 
 function App() {
   // Assuming you have fetched the plant data and stored it in the 'plants' state
@@ -14,51 +14,21 @@ function App() {
   //     .then((response) => response.json())
   //     .then((data) => setPlants(data));
   // }, []);
+  console.log(plants);
 
   return (
-    <Router>
-      <div>
-        <h1>Plant Database</h1>
-        {/* <Switch> */}
+    <>
+      <Router>
+        <Routes>
           {/* Route for the plant list page */}
-          {/* <Route exact path="/"> */}
-            {/* <PlantList plants={plants} /> */}
-          {/* </Route> */}
+          <Route path="/" element={<PlantList plants={plants} />} />
 
           {/* Route for individual plant details pages */}
-          {/* <Route path="/plant/:name"> */}
-            {/* <PlantDetails plants={plants} /> */}
-          {/* </Route> */}
-        {/* </Switch> */}
-      </div>
-    </Router>
+          {/* <Route path="/plant/:name" element={<PlantDetails plants={plants} />} /> */}
+        </Routes>
+      </Router>
+    </>
   );
 }
 
 export default App;
-
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
