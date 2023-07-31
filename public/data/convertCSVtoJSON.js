@@ -1,8 +1,8 @@
 const fs = require('fs');
 const Papa = require('papaparse');
 
-const csvFilePath = './src/data/plants.csv';
-const jsonDataPath = './src/data/plants.json';
+const csvFilePath = './public/data/plants.csv';
+const jsonDataPath = './public/data/plants.json';
 
 fs.readFile(csvFilePath, 'utf-8', (err, data) => {
   if (err) {

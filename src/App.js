@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PlantList from './PlantList';
 import PlantDetails from './PlantDetails';
-import plants from './plants';
+import plants from './data/plants';
 
 function App() {
   // Assuming you have fetched the plant data and stored it in the 'plants' state
