@@ -5,7 +5,7 @@ const PlantDetails = ({ plant }) => {
       return <div>Plant not found.</div>;
     }
 
-    const imgPath = "https://drive.google.com/uc?export=view&id=" + plant.imgId;
+    const imgPath = "https://drive.google.com/uc?export=view&id=1_aPIblL-tTtWKAADSSADASDNIloPB4QNlfFcl-" //+ plant.imgId;
   
     return (
       <div className="container mt-4">
