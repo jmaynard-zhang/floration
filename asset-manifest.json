@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/floration/static/css/main.3003bf6a.css",
+    "main.js": "/floration/static/js/main.131ead8b.js",
+    "index.html": "/floration/index.html",
+    "main.3003bf6a.css.map": "/floration/static/css/main.3003bf6a.css.map",
+    "main.131ead8b.js.map": "/floration/static/js/main.131ead8b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3003bf6a.css",
+    "static/js/main.131ead8b.js"
+  ]
+}
